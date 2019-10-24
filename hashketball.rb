@@ -126,8 +126,6 @@ def num_points_scored(player_name)
     team[:players]
   end.flatten
 
-  # find the player whose name matches the argument 'player_name'
-  # return that player's points
   all_players.each do |player|
     return player[:points] if player[:player_name] == player_name
   end
